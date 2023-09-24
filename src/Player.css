@@ -1,0 +1,169 @@
+.App {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 10%;
+    justify-content: center;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: auto;
+    border: 1.2px solid #2f8116;
+    border: dashed;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    margin: 5%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    width: 18rem;
+    border: 1.5px solid #2f8116;
+    border: dashed;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-image: url("./img/1.jpg");
+    padding: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 5%;
+}
+
+.card:hover {
+    transform: scale(2);
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card .maillot {
+    background-color: #ff5722;
+    color: rgb(47, 172, 172);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.card:hover .maillot {
+    transform: scale(1.2);
+}
+
+.card .age {
+    font-weight: bold;
+}
+
+.card:hover .age {
+    color: #ff5722;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+@keyframes myanimation {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 20px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.card p {
+    animation: myanimation 4s infinite;
+}
+
+.card-title {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.letter {
+    display: inline-block;
+    animation: wave 5s infinite;
+}
+
+@keyframes wave {
+    0% {
+        color: #ff0000;
+        transform: translateY(0);
+    }
+
+    20% {
+        color: #00ff00;
+        transform: translateY(-10px);
+    }
+
+    40% {
+        color: #2b7ca1;
+        transform: translateY(-9px);
+    }
+
+    60% {
+        color: #6128a3;
+        transform: translateY(-8px);
+    }
+
+    80% {
+        color: #b7ce53;
+        transform: translateY(-7px);
+    }
+
+    100% {
+        color: #0000ff;
+        transform: translateY(0);
+    }
+}
